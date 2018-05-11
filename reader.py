@@ -35,8 +35,8 @@ def read_file(file_path):
         elif line == 'Vector\n':
             obj_list['vector_{}'.format(i)] = __read_line(f)
             i += 1
-#        else:
-#            print('Unknown data')
+        else:
+            print('Unknown data')
     f.close()
     return obj_list
 
