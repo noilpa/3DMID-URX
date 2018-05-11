@@ -2,8 +2,8 @@ import pprint
 
 
 def __read_line(file):
-    start = file.readline().strip().split(',')
-    stop = file.readline().strip().split(',')
+    start = [float(i)/1000 for i in file.readline().strip().split(',')]
+    stop = [float(i)/1000 for i in file.readline().strip().split(',')]
     direction = file.readline().strip().split(',')
 
     obj = {
@@ -15,8 +15,8 @@ def __read_line(file):
 
 
 def __read_sphere(file):
-    center = file.readline().strip().split(',')
-    radius = file.readline().strip()
+    center = [float(i)/1000 for i in file.readline().strip().split(',')]
+    radius = float(file.readline().strip())/1000
     obj = {
         'center': center,
         'radius': radius,
