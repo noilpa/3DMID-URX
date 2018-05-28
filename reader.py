@@ -41,7 +41,3 @@ def read_file(file_path):
     return obj_list
 
 
-if __name__ == '__main__':
-    __pp = pprint.PrettyPrinter(indent=4)
-    __path = 'C:/Users/ilyan/Desktop/points.txt'
-    __pp.pprint(read_file(__path))
